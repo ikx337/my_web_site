@@ -1,0 +1,57 @@
+/* common style */
+
+header, nav, section, footer {
+    padding: 10px;
+}
+
+header a, section h2 {
+    color: white;
+}
+
+header h1, header p, section h2, section p {
+    margin: 0;
+}
+
+nav a, section h2, section p {
+    padding: 5px;
+}
+
+header, nav, section {
+    margin-bottom: 20px;
+}
+
+nav, section {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* end of common style */ 
+
+body {
+    margin: auto;
+    max-width: 1000px;
+    padding: 5px;
+}
+
+header {
+    background-color: blue;
+}
+
+nav a {
+    border: 1px solid blue;
+    color: blue
+}
+
+section h2 {
+    display: inline-block;
+    background-color: black;
+}
+

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site web de Cyril Guillemin : Vers une architeture compréhensible de l'ordinateur">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Cyril Guillemin</title>
+  </head>
+  <body>
+    <header>
+        <a href="index.html">
+            <h1>Cyril Guillemin</h1>
+            <p>Vers une architeture compréhensible de l'ordinateur</p>
+        </a>
+    </header>
+    <nav>
+        <a href="1.html">Algorithme Guillemin</a>
+    </nav>
+    <section>
+        <h2>Algorithme Guillemin</h2>
+        <p>Cette algorithme permet la conversion en base B ou le découpage d'un nombre en chiffre.</p>
+        <p>1/ Exemple : conversion de 137 en base 8</p>
+        <ul>
+            <li>
+                137 >= 8**0, (8**0 = 1) ? -> vraie
+            </li>
+            <li>
+                137 >= 8**1, (8**1 = 8) ? -> vraie
+            </li>
+            <li>
+                137 >= 8**2, (8**2 = 64) ? -> vraie
+            </li>
+            <li>
+                137 >= 8**3, (8**3 = 512) ? -> faux
+            </li>
+        </ul>
+        <p>Les poids à considérés sont donc : 64, 8, 1</p>
+        <ul>
+            <li>
+                137/64 : quotient = 2, reste = 9
+            </li>
+            <li>
+                9/8 : quotient = 1, reste = 1
+            </li>
+            <li>
+                1/1 : quotient = 1, reste = 0
+            </li>
+        </ul>
+        <p>La jointure des quotients donne 211 et (137)10 = (211)8</p>
+        <p>2/ Exemple : découpage en chiffre du nombre 211</p>
+        <ul>
+            <li>
+                211/100 : quotient = 2, reste = 11
+            </li>
+            <li>
+                11/10 : quotient = 1, reste = 1
+            </li>
+            <li>
+                1/1 : quotient = 1, reste = 0
+            </li>
+        </ul>
+        <p>Les quotients correspondent aux chiffres composant le nombre de départ : 211 donne 2,1,1</p>
+    </section>
+  </body>
+</html>
