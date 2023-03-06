@@ -42,6 +42,7 @@ section {
 
 a {
     text-decoration: none;
+    color: blue
 }
 
 a:hover {
@@ -60,7 +61,6 @@ body {
 /* nav */
 nav a {
     border: 1px solid blue;
-    color: blue
 }
 
 /* section */

@@ -23,14 +23,12 @@
         <a href="2.html">Additionneur Guillemin</a>
     </nav>
     <section>
-        <h2>Présentation</h2>
-        <p>Passionné par l'ordinateur, je travaille en autodidacte sur une architecture d'ordinateur "simple" à comprendre.
-        L'idée est de penser un ordinateur fonctionnant en octal codé binaire.
-        Les chiffres de la base 10 se code sur 4 bits, mais avec ces 4 bits on peut aussi coder 6 autres chiffres.
-        Travailler en decimal codé binaire impliquerais des circuits électroniques non optimisés à mon sens ...
-        La base octal (base 8) semble donc être une base intéressante pour l'optimisation des circuits combinatoires
-        car sur 3 bits on code un maximum de chiffre contenue dans la base 10, à savoir 0, 1, 2, 3, 4, 5, 6, 7.
-        Je vais donc essayer de créer une architecture d'ordinateur fonctionnant en octal codé binaire.</p>
+        <h2>Additionneur Guillemin</h2>
+        <p>Il s'agit d'un additionneur entre deux chiffres octal codé binaire et d'une retenue codé sur 1 bit.</p>
+        <p>Tout d'abord, j'ai réalisé un <a href="https://github.com/ikx337/gen_at_b8">programme python</a> afin de générer la table d'addition octal pour connâitre les résultats attendues par cet additionneur.</p>
+        <p>Ensuite, j'ai réalisé un <a href="https://github.com/ikx337/gen_tt_at_b8">programme python</a> qui génère les fonctions logiques de chacune des sorties de cet additionneur.</p>
+        <p>Ensuite, j'ai utilisé le logiciel <a href="https://abebar.pagesperso-orange.fr/QMCP.html">QMCP</a> pour minimiser ces fonctions logiques afin d'obtenir une optimisation de cet additionneur.</p>
+        <p>Enfin j'ai réalisé cet <a href="https://github.com/ikx337/guillemin_adder_test">additionneur</a> avec le logiciel <a href="http://www.cburch.com/logisim/">Logisim</a> afin de le tester.</p>
     </section>
     <footer>
         <h3>Contact</h3>
